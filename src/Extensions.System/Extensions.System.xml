@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions.System</name>
+    </assembly>
+    <members>
+        <member name="T:Extensions.System.DateTimeExtensions">
+            <summary>
+            Extensions to <see cref="T:System.DateTime"/>
+            </summary>
+        </member>
+        <member name="M:Extensions.System.DateTimeExtensions.ToFriendlyString(System.DateTime)">
+            <summary>
+            Represents a date as a human-friendly duration, e.g. "two days ago"
+            </summary>
+            <param name="dateTime">Date to format</param>
+            <returns>Friendly string</returns>
+        </member>
+        <member name="T:Extensions.System.StringExtensions">
+            <summary>
+            Extensions to <see cref="T:System.String"></see>
+            </summary>
+        </member>
+        <member name="M:Extensions.System.StringExtensions.ToTitleCase(System.String)">
+            <summary>
+            Formats a string as title case, capitalizing major words
+            </summary>
+            <param name="string">Input string</param>
+            <returns>Title-case formatted string</returns>
+        </member>
+        <member name="T:System.Linq.IEnumerableExtensions">
+            <summary>
+            Extensions to <see cref="T:System.Collections.Generic.IEnumerable`1"/>
+            </summary>
+        </member>
+        <member name="M:System.Linq.IEnumerableExtensions.ToCsv``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)">
+            <summary>
+            Presents a collection as a comma-separated string
+            </summary>
+            <typeparam name="T">Type of collection item</typeparam>
+            <param name="enumerable">Collection</param>
+            <param name="withNewLine">Whether to write a newline after each item</param>
+            <returns>Comma-separated string of collection items</returns>
+        </member>
+    </members>
+</doc>

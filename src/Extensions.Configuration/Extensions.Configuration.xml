@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.Configuration.ConfigurationExtensions">
+            <summary>
+            Extensions to .NET Standard config framework
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Microsoft.Extensions.Configuration.ConfigurationExtensions.AddStandardProviders(Microsoft.Extensions.Configuration.IConfigurationBuilder)" -->
+    </members>
+</doc>

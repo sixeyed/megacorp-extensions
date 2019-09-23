@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Extensions.AspNetCore\Extensions.AspNetCore.csproj" />
+    <ProjectReference Include="..\Extensions.Configuration\Extensions.Configuration.csproj" />
+    <ProjectReference Include="..\Extensions.Diagnostics\Extensions.Diagnostics.csproj" />
+    <ProjectReference Include="..\Extensions.System\Extensions.System.csproj" />
+  </ItemGroup>
+
+</Project>

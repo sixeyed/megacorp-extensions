@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions.AspNetCore</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.Builder.IApplicationBuilderExtensions">
+            <summary>
+            Extensions for <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>
+            </summary>
+            <remarks>
+            Use in ASP.NET Core startup to configure a standard pipeline
+            </remarks>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.IApplicationBuilderExtensions.UseStandardHeaders(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Add standard security headers to all HTTP responses
+            </summary>
+            <param name="app">Application builder</param>
+            <returns>Application builder</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.IApplicationBuilderExtensions.UseStandardMetrics(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Add a /metrics endpoint publishing standard app metrics in Prometheus format
+            </summary>
+            <param name="app">Application builder</param>
+            <returns>Application builder</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.IApplicationBuilderExtensions.UseStandardPipeline(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Boolean)">
+            <summary>
+            Configure a standard ASP.NET Core pipeline, with security headers, metrics, error page and static files
+            </summary>
+            <remarks>
+            This sets up the initial pipeline, then you need to configure your own routing components
+            </remarks>
+            <param name="app">Application builder</param>
+            <param name="isDevelopment">If the app is running in the dev environment</param>
+            <returns>Application builder</returns>
+        </member>
+    </members>
+</doc>

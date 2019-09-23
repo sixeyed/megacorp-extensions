@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>MegaCorp</Authors>
+    <Description>System extenstions</Description>
+    <RepositoryUrl>https://github.com/sixeyed/megacorp-extensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/sixeyed/megacorp-extensions/wiki</PackageProjectUrl>
+    <PackageId>MegaCorp.Extensions.System</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1-pre</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\scm\psod-extensions\psod-extensions-src\m4\extensions\src\Extensions.System\Extensions.System.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Humanizer.Core" Version="2.7.2" />
+    <PackageReference Include="morelinq" Version="3.2.0" />
+  </ItemGroup>
+
+</Project>

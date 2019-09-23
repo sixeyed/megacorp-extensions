@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions.Diagnostics</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.IServiceCollectionExtensions">
+            <summary>
+            Extensions to ASP.NET Core services
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IServiceCollectionExtensions.AddDiagnostics(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add standard disgnostics service 
+            </summary>
+            <param name="services">Service collection</param>
+            <returns>Service collection</returns>
+        </member>
+        <member name="T:Extensions.Diagnostics.Model.Diagnostics">
+            <summary>
+            .NET system diagnostics
+            </summary>
+        </member>
+        <member name="P:Extensions.Diagnostics.Model.Diagnostics.OSArchitecture">
+            <summary>
+            System architecture of the current runtime
+            </summary>
+        </member>
+        <member name="P:Extensions.Diagnostics.Model.Diagnostics.OSDescription">
+            <summary>
+            Operating system of the current runtime
+            </summary>
+        </member>
+        <member name="P:Extensions.Diagnostics.Model.Diagnostics.HostName">
+            <summary>
+            Machine name
+            </summary>
+        </member>
+        <member name="P:Extensions.Diagnostics.Model.Diagnostics.FrameworkDescription">
+            <summary>
+            .NET framework version
+            </summary>
+        </member>
+        <member name="T:Extensions.Diagnostics.Services.DiagnosticsService">
+            <summary>
+            Service to fetch current runtime <see cref="T:Extensions.Diagnostics.Diagnostics"/>
+            </summary>
+        </member>
+        <member name="M:Extensions.Diagnostics.Services.DiagnosticsService.GetDiagnostics">
+            <summary>
+            Gets current runtime <see cref="T:Extensions.Diagnostics.Diagnostics"/>
+            </summary>
+            <returns>Current runtime status</returns>
+        </member>
+    </members>
+</doc>
